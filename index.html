@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1,user-scalable=no">
-    <title>Document</title>
+    <title>Automaton Visualizer</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
     <script src="HelperFunctions.js"></script>
     <script src="CellularAutomaton.js"></script>
@@ -11,6 +11,12 @@
 </head>
 <body>
     <div class="holder">
+
+        <p>click and drag to pan</p>
+        <p>mouse wheel to zoom</p>
+
+        <hr class="seperator">
+
         <p id="zoomP"> Zoom level: </p>
         <button id="ResetZoom">Reset Zoom</button>
         
@@ -23,8 +29,8 @@
             <label>Rule:</label> <input type="text" id="ruleInput" value="30">
         </div>
         
-        <button id="Shuffle">Shuffle</button>
         <button id="Recalculate">Recalculate</button>
+        <button id="Shuffle">Shuffle</button>
 
         <p id="loading">loading...</p>
 
